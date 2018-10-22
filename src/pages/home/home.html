@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  The world is your oyster.
+  <p>
+    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+  </p>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Ingredientes</ion-label>
+      <ion-select [(ngModel)]="ingredientes" multiple="true" cancelText="Cancelar" okText="Listo">
+        <ion-option value="bacon" selected="true">Tocino</ion-option>
+        <ion-option value="olives">Aceitunas Negras</ion-option>
+        <ion-option value="xcheese" selected="true">Queso Extra</ion-option>
+        <ion-option value="peppers">Pimientos Verdes</ion-option>
+        <ion-option value="mushrooms">Setas</ion-option>
+        <ion-option value="onions">Cebolla</ion-option>
+        <ion-option value="pepperoni">Pepperoni</ion-option>
+        <ion-option value="pineapple">Piña</ion-option>
+        <ion-option value="sausage" selected="true">Salchicha</ion-option>
+        <ion-option value="jamon" selected="true">Jamón</ion-option>
+        <ion-option value="Spinach">Espinacas</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
