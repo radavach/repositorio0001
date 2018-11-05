@@ -15,26 +15,23 @@
 
 <ion-content padding>
 
+  <!-- <img style="width: 120; height: 120 px;" src = "../../assets/imgs/imagen.jpg" > -->
   <img src = "../../assets/imgs/imagen.jpg" >
 
   <ion-list>
 
     <ion-item>
-      <ion-label fixed>Username</ion-label>
-      <ion-input type="text" value=""></ion-input>
+      <ion-label fixed>Usuario</ion-label>
+      <ion-input [(ngModel)]="usuario" type="text" value=""></ion-input>
     </ion-item>
   
     <ion-item>
       <ion-label fixed>Password</ion-label>
-      <ion-input type="password"></ion-input>
+      <ion-input [(ngModel)]= "password" type="password"></ion-input>
     </ion-item>
   
   </ion-list>
 
-  <ion-list>
-
-    <button (click)="clickHome()" ion-button block>Iniciar Sesión</button>
-
-  </ion-list>
+   <button [disabled]="this.usuario.length == 0 || this.password.length == 0" (click)="clickHome()" ion-button block>Iniciar Sesión</button>
 
 </ion-content>
